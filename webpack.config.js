@@ -6,11 +6,11 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, './'),
   },
+  mode: 'none',
   module: {
       rules: [
         {
           test: /\.jsx?$/,
-          exclude: ['node_modules'],
           use: ['babel-loader'],
         },
         {
