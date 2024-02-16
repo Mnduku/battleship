@@ -3,6 +3,11 @@ export default class Ship{
         this.size = size
         this.hitcount = 0
         this.sunken = false
+        this.cord = []
+    }
+
+    place(cord){
+        this.cord = cord
     }
 
     hit(){
